@@ -1,273 +1,133 @@
-\documentclass{modernsimplecv}
-% try out different fonts: classic, fira, raleway, chivo
-\usepackage[utf8]{inputenc}
-\usepackage[margin=1cm, a4paper]{geometry}
-
-% ------------------------------------------------------------------------------------
-% you can try out different fonts here by commenting the following lines in and out
-% -----------------------------------------------------------------------------------
-\usepackage[default]{raleway}
-%\usepackage[sfdefault]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}\normalfont
-%\usepackage[familydefault,light]{Chivo} 
-%\usepackage[sfdefault,light,condensed]{roboto}
-%\usepackage[default]{cantarell}
-%\usepackage[sfdefault]{AlegreyaSans}
-
-
-\usepackage{beuron}
-\usepackage{LobsterTwo}%if not suposed to be main font, load other main font after this
-
-
-
-%------------------------------------------------------------------ Variablen
-
-\newlength{\rightcolwidth}
-\newlength{\leftcolwidth}
-\setlength{\leftcolwidth}{0.48\textwidth}
-\setlength{\rightcolwidth}{0.47\textwidth}
-
-%------------------------------------------------------------------
-\title{modern-simple-CV}
-\author{\LaTeX{} Ninja}
-\date{August 2019}
-
-\pagestyle{empty}
-\begin{document}
-
-
-\thispagestyle{empty}
-%-------------------------------------------------------------
-
-
-
-\tikz[remember picture,overlay] {%
-\node[rectangle, fill=white, anchor=north, minimum width=\paperwidth, minimum height=5cm](header) at (current page.north){};%
-}
-
-\begin{minipage}[t]{0.21\textwidth}
-\vspace{0pt} % Trick for alignment
-\includegraphics[width=\textwidth]{jack.jpg}\hspace{1em}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.77\textwidth}
-\vspace{0pt} % Trick for alignment
-\begin{shaded*}
-
-\begin{minipage}[t]{0.4\textwidth}
-\vspace{0pt} % Trick for alignment
-% here the fancy font can be taken out by removing \LobsterTwo
-{\par\centering\huge\LobsterTwo{Jack Sparrow}} \\[0.3cm]
-\faGlobe~ Nationality: english\\
-\faBirthdayCake~ 1690 \\
-\faMapMarker~ on a ship \\
-
-{\small
-\faGraduationCap~ \underline{Titles:} Dr. Dr. Captain \\
-\faCommentsO~ \underline{Languages:} \emph{English} C2, \emph{French} B2.}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.55\textwidth}
-\vspace{0pt} % Trick for alignment
-\faPhone~ 0999/999 6767400 \\
-\faAt~ \protect\url{jack@sparrow.com} \\
-
-\faEnvelopeO~ The Black Pearl \\ 
-\faMapMarker~ Tortuga \\
-
-%\aiAcademiaSquare 
-\faFont~ \protect\url{https://academia.edu/JackSparrow} \\
-\faGithub~ \protect\url{github.com/sparrow} \\
-%\aiOrcid 
-\faCircle~ \protect\url{orcid.org/0000-0000-0000-0000} \\
-\end{minipage}
-\hfill
-\end{shaded*}
-\end{minipage}\\[15pt]
-
-
-%------------------------------------------------
-
-% hier muss die "unsichtbare" Überschrift rein, weil er sonst nicht die Paracols startet... komisch...
-\subsection*{}
-\vspace{-3em}
-
-\setlength{\columnsep}{1.5cm}
-\columnratio{0.48}[0.47]
-\begin{paracol}{2}
-\hbadness5000
-%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
-
-\paracolbackgroundoptions
-
-% 0.9,0.9,0.9 -- 0.8,0.8,0.8
-
-
-\footnotesize
-{
-
-\small
-\section*{Short Resumé}
-
-\begin{minipage}[t]{\leftcolwidth}
-\begin{tabular}{r| p{0.6\textwidth} c}
-    \cvevent{2018--2021}{Captain of the Black Pearl}{Lead}{East Indies}{Finally got the goddamn ship back. \lorem}{disney.png} \\
-    \cvevent{2019}{Freelance Pirate}{Bucaneering}{Tortuga}{This and that. The usual, aye?}{medal.jpeg} \\
-    \cvevent{2016--2017}{Captain of the Black Pearl}{Lead}{Tortuga}{Found a secret treasure, lost the ship.}{medal.jpeg}
-\end{tabular}
-
-\vspace{4em}
-
-\small
-\section*{Lots of Information}
-
-\begin{tabular}{r| p{0.6\textwidth} c}
-    \cvevent{2018--2021}{Captain of the Black Pearl}{Lead}{East Indies}{Finally got the goddamn ship back.}{disney.png} \\
-    \cvevent{2019}{Freelance Pirate}{Bucaneering}{Tortuga}{This and that. The usual, aye? \lorem}{medal.jpeg} \\
-    \cvevent{2016--2017}{Captain of the Black Pearl}{Lead}{Tortuga}{Found a secret treasure, lost the ship.}{medal.jpeg}
-\end{tabular}
-
-\vspace{4em}
-\end{minipage}
-
-\begin{minipage}[t]{\leftcolwidth}
-\section*{Degrees}
-\begin{tabular}{r p{0.6\textwidth} c}
-    \cvdegree{1710}{Captain}{Certified}{Tortuga Uni}{}{disney.png} \\
-    \cvdegree{1715}{Bucaneering}{M.A.}{London}{}{medal.jpeg} \\
-    \cvdegree{1720}{Bucaneering}{B.A.}{London}{}{medal.jpeg}
-\end{tabular}
-\end{minipage}\hfill
-
-\vspace{3em}
-
-\begin{minipage}[t]{\leftcolwidth}
-\section*{Certificates \& Grants}
-\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
-    1708 & Captain's Certificates \\
-    1710 & Travel grant \\
-    1715--1716 & Grant from the Pirate's Company\\
-    1708 & Captain's Certificates \\
-    1710 & Travel grant \\
-    1715--1716 & Grant from the Pirate's Company
-\end{tabular}
-\bigskip
-
-\end{minipage}\hfill
-
-
-\vspace{2em}
-
-\begin{minipage}[t]{\leftcolwidth}
-\section*{Lots of Information}
-\begin{tabular}{r| p{0.6\textwidth} c}
-    \cvevent{2018--2021}{Captain of the Black Pearl}{Lead}{East Indies}{Finally got the goddamn ship back. \lorem}{disney.png} \\
-    \cvevent{2019}{Freelance Pirate}{Bucaneering}{Tortuga}{This and that. The usual, aye?}{medal.jpeg} \\
-    \cvevent{2016--2017}{Captain of the Black Pearl}{Lead}{Tortuga}{Found a secret treasure, lost the ship.}{medal.jpeg}
-\end{tabular}
-
-\vspace{4em}
-
-\small
-\section*{Lots of Information}
-
-\begin{tabular}{r| p{0.6\textwidth} c}
-    \cvevent{2018--2021}{Captain of the Black Pearl}{Lead}{East Indies}{Finally got the goddamn ship back.}{disney.png} \\
-    \cvevent{2019}{Freelance Pirate}{Bucaneering}{Tortuga}{This and that. The usual, aye? \lorem}{medal.jpeg} \\
-    \cvevent{2016--2017}{Captain of the Black Pearl}{Lead}{Tortuga}{Found a secret treasure, lost the ship.}{medal.jpeg}
-\end{tabular}
-
-\vspace{4em}
-\end{minipage}
-
-}
-%-----------------------------------------------------------
-\switchcolumn
-
-\begin{minipage}[t]{\rightcolwidth}
-\section*{Short Resumé}
-
-\begin{tabular}{r| p{0.6\textwidth} c}
-    \cvevent{2018--2021}{Captain of the Black Pearl}{Lead}{East Indies}{Finally got the goddamn ship back.}{disney.png} \\
-    \cvevent{2019}{Freelance Pirate}{Bucaneering}{Tortuga}{This and that. The usual, aye?}{medal.jpeg} \\
-    \cvevent{2016--2017}{Captain of the Black Pearl}{Lead}{Tortuga}{Found a secret treasure, lost the ship.}{medal.jpeg}
-\end{tabular}
-
-\end{minipage}
-
-\vspace{2em}
-
-\lineheading{\rightcolwidth}{Code}{\faCode}{black}
-
-\lipsum[10]
-
-
-
-\bigskip
-
-\section{Programming} 
-{\small
-\lipsum[20]
-
-}
-\bigskip
-
-\begin{skillsection}{\rightcolwidth}
-    \cvitem{\faStar\faStar\faStar\faStar\faStar}{Python: Machine Learning, \dots}
-    \cvitem{\faStarO\faStar\faStar\faStar\faStar}{Bootstrap}
-            \cvitem{\faStarO\faStarO\faStar\faStar\faStar}{jQuery}
-        \cvitem{\faStarO\faStarO\faStarO\faStar\faStar}{Databases}
-    \cvitem{\faStarO\faStarO\faStarO\faStarO\faStar}{c++}
-\end{skillsection}
-
-
-\bigskip
-
-
-
-\vspace{4em}
-
-
-\begin{minipage}[t]{\rightcolwidth}
-\section*{Publications}
-\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
-    1729 & \emph{How I almost got killed by Lady Swan}, Tortuga Printing Press. \\
-    1720 & ``Privateering for Beginners'', in: \emph{The Pragmatic Pirate} (1/1720).\\
-    1729 & \emph{How I almost got killed by Lady Swan}, Tortuga Printing Press. \\
-    1720 & ``Privateering for Beginners'', in: \emph{The Pragmatic Pirate} (1/1720).\\
-    1729 & \emph{How I almost got killed by Lady Swan}, Tortuga Printing Press. \\
-    1720 & ``Privateering for Beginners'', in: \emph{The Pragmatic Pirate} (1/1720).
-\end{tabular}
-\bigskip
-
-\section*{Talks}
-\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
-    Nov. 1726 & ``How I lost my ship (\& and how to get it back)'', at: \emph{Annual Pirate's Conference} in Tortuga, Nov. 1726. \\
-    Nov. 1726 & ``How I lost my ship (\& and how to get it back)'', at: \emph{Annual Pirate's Conference} in Tortuga, Nov. 1726. \\
-    Nov. 1726 & ``How I lost my ship (\& and how to get it back)'', at: \emph{Annual Pirate's Conference} in Tortuga, Nov. 1726.
-\end{tabular}
-\end{minipage}
-
-
-
-
-
-
-
-
-
-\end{paracol}
-
-\vfill{} % Whitespace before final footer
-
-%----------------------------------------------------------------------------------------
-%	FINAL FOOTER
-%----------------------------------------------------------------------------------------
-\setlength{\parindent}{0pt}
-\begin{minipage}[t]{\textwidth}
-\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
-{\small Jack Sparrow \icon{\faEnvelopeO}{black}{} The Black Pearl \icon{\faMapMarker}{black}{} Tortuga \icon{\faPhone}{black}{} 0099/333 5647380 
-\icon{\faAt}{black}{} \protect\url{jack@sparrow.com}
-}
-\end{center}
-\end{minipage}
-
-\end{document}
+<html>
+ <head>
+<link type="text/css" rel="stylesheet" href="https://www.dropbox.com/s/trsldt0me90jzs8/resume.css"/>
+<title></title> 
+</head>
+<body>
+<div id="header">
+<p id="name">Deep Laxman Sukhwani</p>
+         <a href="mailto:deepsukhwani@gmail.com" target="_blank"><p id="email">deepsukhwani@gmail.com</p></a>
+     </div>
+     <div class="left">
+     </div>
+     <div class="right">
+            <h3>CV Highlights</h3>
+            <p>
+            <ul>
+                <li>Currently going through CS253 – Web Application Engineering and CS61A – Structure & Interpretation of Computer Programs</li>
+                <li>Learnt basic Python, JavaScript, HTML, CSS on Codecademy.com.</li>
+                <li>An independent, dedicated, efficient person. These attributes are proved through the series of courses I have taken or I am taking as of now independently through online platforms.</li>
+                <li>Good Communication Skills, Presentation Skills, attitude towards leadership, authorisation and delegation, conflict resolution and negotiation and a very good team worker.</li></ul>
+            </p>
+            <h3>Professional Experience</h3>
+            <h4 id="company-name">Wingify Software Pvt Ltd</h4>
+            <p id="job-title"><strong>Support Engineer (Technical Support)</strong></p>
+            <p id="job-responsibilities">Job Responsbilities</p>
+            <p>
+            <ul>
+                <li>Answer customer queries over email / ticketing system</li>
+                <li>Interact with our engineering team to get software issues and bugs resolved</li>
+                <li>Occasionally interact with customers over Skype or telephone</li>
+                <li>Contribute ideas to the team on how customers can be delighted</li></ul>
+            </p>
+            <h3>Educational Qualifications</h3>
+            <table>
+                <tr id="heading">
+                    <td>Qualification</td>
+                    <td>Board</td>
+                    <td>Percentage / Grades</td>
+                    <td>Year</td>
+                </tr>
+                <tr>
+                    <td>S.S.C</td>
+                    <td>G.S.E.B India</td>
+                    <td>75.57%</td>
+                    <td>2004</td>
+                </tr>
+                <tr>
+                    <td>H.S.C (Science Stream)</td>
+                    <td>G.S.E.B India</td>
+                    <td>72.40%</td>
+                    <td>2006</td>
+                </tr>
+                <tr>
+                    <td>GDCA (Grad. Dipl in Computer Applications)</td>
+                    <td>NIE (National Institute Of Engineering), Mumbai, India</td>
+                    <td>A Grade</td>
+                    <td>2008</td>
+                </tr>
+                <tr>
+                    <td>B.Sc. (Hons) - Applied Accounting</td>
+                    <td>Oxford Brookes University</td>
+                    <td>2:1 – Upper Second Class Honours</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>Chartered Accounting - ACCA</td>
+                    <td>ACCA Glasgow, UK</td>
+                    <td>Passed (1st Attempt)</td>
+                    <td>2013</td>
+                </tr>
+            </table>
+            <h3>Independent Courses</h3>
+            <p>
+            <ul>
+                <li>
+                <span id="course-name">HTML & CSS for Beginners – Web Fundamentals</span> – Codecademy.com</li>
+                <li>
+                <span id="course-name">Python – Fundamentals and Dynamic Programming </span> - Codecademy.com</li>
+                <li>
+                <span id="course-name">JavaScript – Programming Basics, JS Apps and Build Games </span> - Codecademy.com</li>
+                <li>
+                <span id="course-name">CS101: Introduction to Computer Science - Building a Web Crawler</span> - Udacity.com</li>
+                <li>
+                <span id="course-name">CS50x – Introduction to Computer Science I</span> – edX.org & Harvard University</li>
+                <li>
+                <span id="course-name">Calculus One</span> - Ohio State University & Coursera.org</li>
+                <li>
+                <span id="course-name">Introduction to Finance</span> - Coursera.org & University of Michigan</li>
+            </ul>
+            <h3>Technical Skills</h3>
+            <p>
+            <ul>
+                <li>
+                <span id="course-name">Operating Systems:</span> DOS, Windows 98, Windows 2000, Windows XP, Windows NT, Windows Server 2003, Windows Vista, Windows 7, Macintosh Computers (OS X), Linux (Ubuntu, Fedora)</li>
+                <li>
+                <span id="course-name">Application Software:</span> Office 97-2003; Office XP, Office 2007, Office for Mac 2011, iWork ’09, Sage Accounting Software, Sage 50 (Accounting Software), Excel 2003/2007 for Financial Modelling spreadsheets.</li>
+                <li>
+                <span id="course-name">Programming Skills:</span>HTML, CSS, Python, JavaScript, learning C and C++</li></ul>
+            </p>
+            <h3>Certifications / Awards:</h3>
+            <p>
+            <ul>
+                <li>Scored highest in ACCA P1 – Governance, Risk & Ethics exam – June 2012 session amongst full time international students at Kaplan Financial, London.</li>
+                <li>Interviewed by ACCA for “international ACCA student in UK”, interview published in January 2012 edition of ACCA Student Accountant Magazine.</li>
+                <li>Interviewed by ACCA for “international ACCA student in UK”, interview published in January 2012 edition of ACCA Student Accountant Magazine.</li></ul>
+            </p>
+            <h3>Personal Information:</h3>
+            <p>
+            <ul>
+                <li>
+                A young, determined hard and smart working person. I believe in task based roles and complete ownership of work.
+                <li>
+                <span id="course-name">Languages Known:</span>English, Hindi, Gujarati and Sindhi</li>
+                <li>
+                <span id="course-name">Hobbies:</span>I love reading Finance and IT related books / magazines, playing Chess, swimming, listening music, surfing Internet, self-learning through e-courses.</li> </ul>
+            </p>
+            <h3>Other Information</h3>
+            <p>
+            <ul>
+                <li>
+                <span id="course-name">Expected Salary:</span>As per company standards</li>
+                <li>
+                <span id="course-name">Area of Interest:</span>Software Development, Programming, Start-ups, Coding, App Development, Technical Support, Support Engineer, Customer Happiness, Client service, Investment Banking, Corporate Finance, Hedge Funds, Mergers & Acquisitions, Analyst, Equity Research, Business Analysis</li>
+                <li>
+                <span id="course-name">Joining Date:</span>Immediate</li></ul>
+            </p>
+            <h3>Declaration</h3>
+            <p>
+            I hereby declare that the details furnished above are true and correct to the best of my knowledge and belief.</p>
+     </div>
+     <div id="footer"></div>
+    </body>
+</html>
