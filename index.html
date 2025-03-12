@@ -2,82 +2,213 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tafajjal Islam | CV</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tafajjal Islam - Researcher Profile</title>
     <style>
-        body { font-family: "Roboto", sans-serif; background-color: #f5f5f5; }
-        .profile-img { border-radius: 50%; width: 150px; height: 150px; object-fit: cover; }
-        .section-title { border-bottom: 3px solid #009688; padding-bottom: 5px; }
-        .tag { margin-right: 5px; }
-        .progress-container { background-color: #ddd; border-radius: 25px; overflow: hidden; }
-        .progress-bar { height: 24px; background-color: #009688; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            color: #ffffff;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: #333333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        .cta-btn {
+            padding: 10px 20px;
+            background-color: #1e90ff;
+            color: #ffffff;
+            border-radius: 5px;
+            text-transform: uppercase;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+        .cta-btn:hover {
+            background-color: #0066cc;
+        }
+
+        section {
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .grid .column {
+            background-color: #444444;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .column h3 {
+            color: #ffffff;
+        }
+
+        footer {
+            background-color: #333333;
+            padding: 20px;
+            text-align: center;
+            color: #e0e0e0;
+        }
+
+        footer a {
+            color: #1e90ff;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .form-control {
+            background-color: #555555;
+            border: 1px solid #444444;
+            color: #e0e0e0;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #1e90ff;
+        }
+
+        .social-links a {
+            margin: 0 15px;
+            font-size: 20px;
+        }
+
     </style>
 </head>
 <body>
-    <div class="w3-content w3-margin-top" style="max-width:1200px;">
-        <div class="w3-row-padding">
-            <div class="w3-third">
-                <div class="w3-white w3-text-grey w3-card-4 w3-round-large">
-                    <div class="w3-container w3-center w3-padding-32">
-                        <img src="https://github.com/tafajjal-edu/tafajjal/releases/download/pdf/300.300.jpg" class="profile-img" alt="Avatar">
-                        <h2 class="w3-text-teal">Tafajjal Islam</h2>
-                        <p><i class="fa fa-briefcase fa-fw"></i> Research Assistant</p>
-                        <p><i class="fa fa-home fa-fw"></i> Rajshahi, Bangladesh</p>
-                        <p><i class="fa fa-envelope fa-fw"></i> tafazzal.edu@mail.com</p>
-                        <p><i class="fa fa-phone fa-fw"></i> +8801648-520548</p>
-                    </div>
-                    <div class="w3-container w3-padding-16 w3-light-grey w3-round">
-                        <p>
-                            <a href="https://github.com/tafajjal-edu/tafajjal/releases/download/pdf/CV.of.Tafajjal.Normal.pdf" class="w3-button w3-teal w3-round"><i class="fa fa-download"></i> Download CV</a>
-                        </p>
-                        <p>
-                            <a href="https://scholar.google.com/citations?user=a1JpBxUAAAAJ&hl=en" target="_blank" class="w3-button w3-teal w3-round tag">Google Scholar</a>
-                            <a href="https://www.researchgate.net/profile/Tafajjal-Islam" target="_blank" class="w3-button w3-teal w3-round tag">ResearchGate</a>
-                            <a href="https://orcid.org/0009-0000-5671-4457" target="_blank" class="w3-button w3-teal w3-round tag">ORCID</a>
-                        </p>
-                    </div>
-                </div>
+
+<header>
+    <h1>Tafajjal Islam</h1>
+    <p>Research Assistant | Psychologist | Data Analyst</p>
+    <a href="#contact" class="cta-btn">Contact Me</a>
+</header>
+
+<section id="hero">
+    <div class="container">
+        <div class="grid">
+            <div class="column">
+                <h2>About Me</h2>
+                <p>I am a dedicated research assistant with expertise in psychological research, data analysis, and clinical studies. Passionate about contributing to hospital-based research and evidence-based patient care.</p>
+                <a href="#cv" class="cta-btn">View CV</a>
             </div>
-            <div class="w3-twothird">
-                <div class="w3-container w3-card w3-white w3-round-large w3-padding-16">
-                    <h2 class="section-title"><i class="fa fa-user fa-fw w3-margin-right w3-text-teal"></i>About Me</h2>
-                    <p>Passionate research assistant specializing in mental health, psychology, and behavioral sciences. Experienced in data analysis, systematic reviews, and quantitative research methodologies.</p>
-                </div>
-                <div class="w3-container w3-card w3-white w3-round-large w3-padding-16 w3-margin-top">
-                    <h2 class="section-title"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-text-teal"></i>Education</h2>
-                    <p><b>MSc in Psychology</b> - University of Rajshahi (Ongoing)</p>
-                    <p><b>BSc in Psychology</b> - University of Rajshahi (2023)</p>
-                </div>
-                <div class="w3-container w3-card w3-white w3-round-large w3-padding-16 w3-margin-top">
-                    <h2 class="section-title"><i class="fa fa-cogs fa-fw w3-margin-right w3-text-teal"></i>Skills</h2>
-                    <p><b>Research Tools:</b> SPSS, NVivo, Zotero, Mendeley, Kobo Toolbox</p>
-                    <p><b>Data Analysis:</b> Statistical interpretation, qualitative coding</p>
-                    <p><b>Technical Skills:</b> MS Office, Adobe Photoshop, LaTeX</p>
-                </div>
-                <div class="w3-container w3-card w3-white w3-round-large w3-padding-16 w3-margin-top">
-                    <h2 class="section-title"><i class="fa fa-language fa-fw w3-margin-right w3-text-teal"></i>Languages</h2>
-                    <p>English - Fluent</p>
-                    <div class="progress-container"><div class="progress-bar" style="width:100%"></div></div>
-                    <p>Bengali - Native</p>
-                    <div class="progress-container"><div class="progress-bar" style="width:100%"></div></div>
-                    <p>Hindi - Intermediate</p>
-                    <div class="progress-container"><div class="progress-bar" style="width:60%"></div></div>
-                </div>
-                <div class="w3-container w3-card w3-white w3-round-large w3-padding-16 w3-margin-top">
-                    <h2 class="section-title"><i class="fa fa-suitcase fa-fw w3-margin-right w3-text-teal"></i>Research Experience</h2>
-                    <p><b>Research Assistant</b> - Health Research Group, University of Rajshahi (2024-Present)</p>
-                    <p>Conducting systematic reviews, data collection, and statistical analysis.</p>
-                </div>
-                <div class="w3-container w3-card w3-white w3-round-large w3-padding-16 w3-margin-top">
-                    <h2 class="section-title"><i class="fa fa-file-text fa-fw w3-margin-right w3-text-teal"></i>Publications</h2>
-                    <p><b>Islam, T., & Mia, M.</b> (2024). An epidemiological study on asthma and depressive symptoms. <i>World Allergy Organization Journal</i>.</p>
-                    <p><b>Mondol, M.H., Islam, T., & Hossain, G.</b> (2024). Internet addiction and mental health: A mediating analysis. <i>BMC Psychiatry</i>.</p>
-                </div>
+            <div class="column">
+                <h2>Research Experience</h2>
+                <p><strong>Current Role:</strong> Research Assistant at Health Research Group, University of Rajshahi.</p>
+                <p><strong>Key Projects:</strong> "Patterns of Substance Use Among Psychotic Inpatients" (Ongoing)</p>
+                <p><strong>Previous Roles:</strong> Research Assistant at the Institute of Natural Resources Research and Development.</p>
+                <a href="#research" class="cta-btn">Explore Research</a>
             </div>
         </div>
     </div>
+</section>
+
+<section id="publications">
+    <div class="container">
+        <h2>Publications & Conference Papers</h2>
+        <div class="grid">
+            <div class="column">
+                <h3>Published Articles</h3>
+                <ul>
+                    <li><a href="#">Gender Differences in Aesthetic and Economic Values - International Journal of Indian Psychology</a></li>
+                    <li><a href="#">Emotional Intelligence and Mental Health - International Journal of Indian Psychology</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Accepted Articles</h3>
+                <ul>
+                    <li><a href="#">Epidemiological Study on Asthma and Depressive Symptoms - PLOS ONE</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="education">
+    <div class="container">
+        <h2>Education & Training</h2>
+        <div class="grid">
+            <div class="column">
+                <h3>Master of Science in Psychology</h3>
+                <p>University of Rajshahi - 2025</p>
+            </div>
+            <div class="column">
+                <h3>Bachelor of Science in Psychology</h3>
+                <p>University of Rajshahi - 2023</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="volunteer">
+    <div class="container">
+        <h2>Volunteer & Leadership Experience</h2>
+        <ul>
+            <li>Divisional Coordinator at Debate Bangladesh</li>
+            <li>President at Debate Monch, University of Rajshahi</li>
+            <li>Campus Director for the International Youth Society for Sustainable Development</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form action="mailto:tafazzal.edu@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            <textarea name="message" class="form-control" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/tafajjal-islam-560665348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=a1JpBxUAAAAJ&hl=en" target="_blank">Google Scholar</a>
+            <a href="https://orcid.org/0009-0000-5671-4457" target="_blank">ORCID ID</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Tafajjal Islam. All Rights Reserved.</p>
+    <a href="#hero">Back to Top</a>
+</footer>
+
 </body>
 </html>
