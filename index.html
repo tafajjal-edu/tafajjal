@@ -1,233 +1,97 @@
 <!DOCTYPE html>
-<html>
-<title>Tafajjal Islam</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-body {
-    background-color: #1a1a1a;
-    color: #e0e0e0;
-}
-
-/* Profile Image - Circular and with shadow */
-.w3-display-container img {
-    border-radius: 50%;
-    border: 5px solid #fff;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
-
-/* Section Header Styling */
-h2 {
-    color: #ffffff;
-    text-align: center;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #1e90ff;
-}
-
-/* Hover Effects for Tags and Buttons */
-.w3-tag:hover, .w3-button:hover {
-    background-color: #0066cc;
-    transform: scale(1.05);
-    transition: 0.3s;
-}
-
-.w3-hover-opacity:hover {
-    opacity: 0.7;
-    transition: 0.3s;
-}
-
-/* Social Media Icon Hover Effects */
-.fa:hover {
-    color: #1e90ff;
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-
-/* Custom progress bar for language skills */
-.w3-light-grey {
-    border-radius: 10px;
-    width: 100%;
-    background-color: #e0e0e0;
-    height: 24px;
-}
-.w3-teal {
-    background-color: #1e90ff;
-}
-.w3-round-xlarge {
-    border-radius: 50px;
-}
-
-/* Button Styling for better interaction */
-.w3-button {
-    padding: 10px 20px;
-    background-color: #1e90ff;
-    color: white;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-/* Make the sidebar social media icons float and show on scroll */
-.social-sidebar {
-    position: fixed;
-    top: 50%;
-    right: 10px;
-    z-index: 100;
-}
-
-.social-sidebar a {
-    display: block;
-    background-color: #1e90ff;
-    margin: 5px;
-    border-radius: 50%;
-    padding: 10px;
-    font-size: 20px;
-    color: white;
-}
-
-.social-sidebar a:hover {
-    background-color: #0066cc;
-}
-
-/* Styling for main container */
-.w3-container {
-    margin-top: 20px;
-}
-
-/* Style the footer for a cleaner design */
-footer {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
-    color: #e0e0e0;
-}
-footer a {
-    color: #1e90ff;
-    text-decoration: none;
-}
-footer a:hover {
-    text-decoration: underline;
-}
-</style>
-<body class="w3-light-grey">
-
-<!-- Social Media Floating Sidebar -->
-<div class="social-sidebar">
-    <a href="https://www.linkedin.com/in/tafajjal-islam-560665348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa fa-linkedin"></i></a>
-    <a href="https://scholar.google.com/citations?user=a1JpBxUAAAAJ&hl=en" target="_blank"><i class="fa fa-google"></i></a>
-    <a href="https://orcid.org/0009-0000-5671-4457" target="_blank"><i class="fa fa-cogs"></i></a>
-    <a href="https://x.com/TahmidH98441297" target="_blank"><i class="fa fa-twitter"></i></a>
-</div>
-
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="https://github.com/tafajjal-edu/tafajjal/releases/download/pdf/300.300.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-white">
-            <h2>Tafajjal Islam</h2>
-          </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tafajjal's Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #004466;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #003355;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background: #005577;
+            border-radius: 5px;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #004466;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Tafajjal's Website</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="content" id="home">
+            <h2>Home</h2>
+            <p>Welcome to my personal website. Here you'll find information about my research, publications, and more.</p>
         </div>
-        
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Research Assistant at Health Research Group</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>University of Rajshahi, Rajshahi, Bangladesh</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>tafazzal.edu@mail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+8801648-520548</p>
-          <p>
-            <a href="./abcf32x.pdf" download="CV.of.Tafajjal.Normal.pdf" class="w3-tag w3-teal w3-round">Resume/CV</a>
-            <a href="https://scholar.google.com/citations?user=a1JpBxUAAAAJ&hl=en" target="_blank" class="w3-tag w3-teal w3-round">Google Scholar</a>
-            <a href="https://www.researchgate.net/profile/Tafajjal-Islam" target="_blank" class="w3-tag w3-teal w3-round">ResearchGate</a>
-            <a href="https://orcid.org/0009-0000-5671-4457" target="_blank" class="w3-tag w3-teal w3-round">ORCID ID</a>
-            <a href="https://x.com/TahmidH98441297" target="_blank" class="w3-tag w3-teal w3-round">Twitter (X)</a>
-          </p>
-
-          <hr> 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Bio</b></p>
-          <p> As a Research Assistant with experience at the Health Research Group, Department of Statistics, University of Rajshahi, I aim to advance evidence-based research in health psychology and behavioral sciences...</p>
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <h6><strong>Research Software:</strong><p> Zotero, Mendeley, SPSS, NVivo, Kobo Toolbox, Grammarly.</p></h6> 
-          <h6><strong>Software Application:</strong><p>MS Office - MS Word, MS Excel, MS Access, MS PowerPoint (advanced level)</p></h6>
-          <h6><strong>Image/Video Processing:</strong><p>Adobe Photoshop, Illustrator, Premiere Pro, Camtasia</p></h6>
-
-          <br>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-          </div>
-          <p>Bengali</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-          </div>
-          <p>Hindi</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
-          </div>
-          <p>Urdu</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
-          </div>
-          <br>
+        <div class="content" id="about">
+            <h2>About Me</h2>
+            <p>Brief bio and academic background.</p>
         </div>
-      </div><br>
+        <div class="content" id="research">
+            <h2>Research</h2>
+            <p>Overview of my research interests and publications.</p>
+        </div>
+        <div class="content" id="contact">
+            <h2>Contact</h2>
+            <p>Email and social media links.</p>
+        </div>
     </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Master of Science in Psychology</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2023 - Current</h6>
-          <p>Thesis Topic: Resilience as a Buffer: Examining the Effects of Mental Well-being on Risky Behaviours and Suicidal Thoughts</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Bachelor of Science in Psychology</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018 - May 2023</h6>
-          <p>Fieldwork Topic: The Effect of Emotional Intelligence on Academic Performance Among University Students in Bangladesh</p>
-          <hr>
-        </div>
-      </div>
-
-      <!-- Research Experience -->
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Research Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Research Assistant</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2024 - Present</h6>
-          <p>Conduct literature reviews, collect and analyze data, prepare interview questions, maintain accurate records...</p>
-          <hr>
-        </div>
-      </div>
-
-      <!-- Footer Section -->
-      <footer>
-        <p>Find me on social media.</p>
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-      </footer>
-    </div>
-
-  </div>
-</div>
-
+    <footer>
+        <p>&copy; 2025 Tafajjal. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
