@@ -3,95 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tafajjal's Website</title>
+    <title>Tafajjal Islam - Researcher & Psychologist</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
             color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            background-color: #f4f4f4;
         }
         header {
-            background: #004466;
-            color: #fff;
-            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            padding: 1em 0;
             text-align: center;
         }
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #003355;
-            padding: 10px 0;
+        nav ul {
+            list-style: none;
+            padding: 0;
         }
-        nav a {
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
+            font-weight: bold;
         }
-        nav a:hover {
-            background: #005577;
-            border-radius: 5px;
+        #hero {
+            background: #1abc9c;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
         }
-        .content {
+        .section {
+            max-width: 800px;
+            margin: 40px auto;
             background: white;
             padding: 20px;
-            margin: 20px 0;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         footer {
             text-align: center;
             padding: 20px;
-            background: #004466;
+            background: #2c3e50;
             color: white;
-        }
-        @media (max-width: 768px) {
-            .container {
-                width: 95%;
-            }
-            nav {
-                flex-direction: column;
-                align-items: center;
-            }
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Tafajjal's Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="container">
-        <div class="content" id="home">
-            <h2>Home</h2>
-            <p>Welcome to my personal website. Here you'll find information about my research, publications, and more.</p>
-        </div>
-        <div class="content" id="about">
-            <h2>About Me</h2>
-            <p>Brief bio and academic background.</p>
-        </div>
-        <div class="content" id="research">
-            <h2>Research</h2>
-            <p>Overview of my research interests and publications.</p>
-        </div>
-        <div class="content" id="contact">
-            <h2>Contact</h2>
-            <p>Email and social media links.</p>
-        </div>
-    </div>
+    
+    <section id="hero">
+        <h1>Tafajjal Islam</h1>
+        <p>Researcher | Psychologist | Educator</p>
+    </section>
+    
+    <section id="about" class="section">
+        <h2>Career Objective</h2>
+        <p>Seeking a Research Assistant position to apply my skills in psychological research, data analysis, and clinical studies, contributing to hospital-based research and patient care.</p>
+        
+        <h2>Personal Details</h2>
+        <p><strong>Date of Birth:</strong> 05 Nov. 1998</p>
+        <p><strong>Height:</strong> 5’6”</p>
+        <p><strong>Nationality:</strong> Bangladeshi</p>
+        <p><strong>Marital Status:</strong> Unmarried</p>
+        <p><strong>Home District:</strong> Nilphamari</p>
+    </section>
+    
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <p><strong>Languages:</strong> Fluent in Bangla, full working knowledge in English.</p>
+        <p><strong>Software:</strong> Zotero, Mendeley, SPSS, NVivo, Kobo Toolbox, Endnote, Grammarly.</p>
+        <p><strong>Other Skills:</strong> MS Office, Photoshop, Illustrator, Premiere Pro, Camtasia.</p>
+    </section>
+    
+    <section id="research" class="section">
+        <h2>Research Experience</h2>
+        <h3>Research Assistant</h3>
+        <p><strong>Health Research Group, University of Rajshahi</strong> (Jan 2024 – Present)</p>
+        <p>Ongoing Project: Patterns of Substance Use Among Psychotic Inpatients: A Cross-Sectional Study</p>
+        <ul>
+            <li>Survey data collection and analysis</li>
+            <li>Writing manuscripts as a first author</li>
+            <li>Review, edit, and ensure data accuracy</li>
+        </ul>
+    </section>
+    
+    <section id="work" class="section">
+        <h2>Work Experience</h2>
+        <h3>Intern Psychologist</h3>
+        <p><strong>National Institute of Mental Health, Dhaka</strong> (Jan - Feb 2025)</p>
+        <ul>
+            <li>Assisted in psychological assessments, counseling, and research.</li>
+            <li>Collaborated with psychiatrists and clinical psychologists.</li>
+        </ul>
+    </section>
+    
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <h3>Master of Science in Psychology</h3>
+        <p><strong>University of Rajshahi</strong></p>
+        <p>Thesis: The Mediating Effect of Mental Well-being on the Association Between Drug Use and Suicidal Thoughts</p>
+        <p>CGPA: 3.43 | Passing Year: 2025</p>
+    </section>
+    
+    <section id="publications" class="section">
+        <h2>Publications</h2>
+        <ul>
+            <li>Islam, T. & Mia, M. (2024). Relationship of Emotional Intelligence with Mental Health. <em>International Journal of Indian Psychology</em>.</li>
+            <li>Mia, M. et al. (2025). Adaptation and validation of the PHQ-9 scale in Bangla. <em>Frontiers in Psychology</em>.</li>
+        </ul>
+    </section>
+    
     <footer>
-        <p>&copy; 2025 Tafajjal. All Rights Reserved.</p>
+        <p>&copy; 2025 Tafajjal Islam. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
