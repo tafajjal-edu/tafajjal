@@ -54,64 +54,112 @@
             margin-top: 20px;
         }
    
-    /* Basic Styling */
-    nav ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        background: #333;
-        overflow: hidden;
-    }
+     /* Basic Navbar Styling */
+        nav {
+            background: #2c3e50; /* Dark Blue */
+            padding: 10px 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            max-width: 90%;
+            margin: auto;
+        }
 
-    nav ul li {
-        float: left;
-        position: relative;
-    }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
 
-    nav ul li a {
-        display: block;
-        padding: 10px 20px;
-        text-decoration: none;
-        color: white;
-    }
+        nav ul li {
+            position: relative;
+            margin: 0 10px;
+        }
 
-    nav ul li a:hover {
-        background: #555;
-    }
+        nav ul li a {
+            display: block;
+            padding: 12px 18px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
 
-    /* Dropdown Styling */
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background: #444;
-        min-width: 200px;
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    }
+        nav ul li a:hover {
+            background: #34495e; /* Slightly lighter blue */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
 
-    .dropdown-content li {
-        float: none;
-    }
+        /* Dropdown Styling */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #34495e;
+            min-width: 220px;
+            border-radius: 5px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            overflow: hidden;
+        }
 
-    .dropdown-content li a {
-        padding: 10px;
-        display: block;
-    }
+        .dropdown-content li {
+            display: block;
+        }
 
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-</style>
+        .dropdown-content li a {
+            padding: 12px;
+            display: block;
+            transition: background 0.3s ease;
+        }
+
+        .dropdown-content li a:hover {
+            background: #1abc9c; /* Teal */
+            color: #fff;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Mobile-Friendly */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                width: 100%;
+                text-align: center;
+            }
+
+            .dropdown-content {
+                position: relative;
+                width: 100%;
+                box-shadow: none;
+                border-radius: 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        
-        <nav>
+      <nav>
     <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
 
         <li class="dropdown">
-            <a href="#research" class="dropbtn">Research</a>
+            <a href="#research" class="dropbtn">Research ▼</a>
             <ul class="dropdown-content">
                 <li><a href="#research-interests">Research Interests</a></li>
                 <li><a href="#research-experience">Research Experience</a></li>
@@ -121,7 +169,7 @@
         </li>
 
         <li class="dropdown">
-            <a href="#work" class="dropbtn">Work</a>
+            <a href="#work" class="dropbtn">Work & Skills ▼</a>
             <ul class="dropdown-content">
                 <li><a href="#work-experience">Work Experience</a></li>
                 <li><a href="#volunteering-experience">Volunteering Experience</a></li>
@@ -133,8 +181,6 @@
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
-
-
     </header>
     
     <section id="hero">
