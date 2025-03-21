@@ -3,275 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tafajjal Islam - Researcher & Psychologist</title>
+    <title>Tafajjal Islam - Research Profile</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #2c3e50;
-            color: white;
-            padding: 1em 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        #hero {
-            background: url('https://cdn.pixabay.com/photo/2023/04/13/06/10/finger-7921766_1280.jpg') no-repeat center center/cover;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-        .section {
-            max-width: 800px;
-            margin: 40px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #2c3e50;
-            color: white;
-            margin-top: 20px;
-        }
-   
-     /* Basic Navbar Styling */
-        nav {
-            background: #2c3e50; /* Dark Blue */
-            padding: 10px 0;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            max-width: 90%;
-            margin: auto;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            position: relative;
-            margin: 0 10px;
-        }
-
-        nav ul li a {
-            display: block;
-            padding: 12px 18px;
-            text-decoration: none;
-            color: white;
-            font-weight: 600;
-            font-size: 16px;
-            transition: all 0.3s ease;
-            border-radius: 5px;
-        }
-
-        nav ul li a:hover {
-            background: #34495e; /* Slightly lighter blue */
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Dropdown Styling */
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: #34495e;
-            min-width: 220px;
-            border-radius: 5px;
-            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-            opacity: 0;
-            transform: translateY(10px);
-            transition: opacity 0.3s ease, transform 0.3s ease;
-            overflow: hidden;
-        }
-
-        .dropdown-content li {
-            display: block;
-        }
-
-        .dropdown-content li a {
-            padding: 12px;
-            display: block;
-            transition: background 0.3s ease;
-        }
-
-        .dropdown-content li a:hover {
-            background: #1abc9c; /* Teal */
-            color: #fff;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Mobile-Friendly */
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav ul li {
-                width: 100%;
-                text-align: center;
-            }
-
-            .dropdown-content {
-                position: relative;
-                width: 100%;
-                box-shadow: none;
-                border-radius: 0;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Navigation Bar -->
     <header>
-      <nav>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-
-        <li class="dropdown">
-            <a href="#research" class="dropbtn">Research ▼</a>
-            <ul class="dropdown-content">
-                <li><a href="#research-interests">Research Interests</a></li>
-                <li><a href="#research-experience">Research Experience</a></li>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#research">Research</a></li>
                 <li><a href="#publications">Publications</a></li>
-                <li><a href="#conferences-seminars">Conferences & Seminars</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </li>
-
-        <li class="dropdown">
-            <a href="#work" class="dropbtn">Work & Skills ▼</a>
-            <ul class="dropdown-content">
-                <li><a href="#work-experience">Work Experience</a></li>
-                <li><a href="#volunteering-experience">Volunteering Experience</a></li>
-                <li><a href="#training-courses">Training & Courses</a></li>
-                <li><a href="#skills">Skills</a></li>
-            </ul>
-        </li>
-
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+        </nav>
     </header>
-    
-    <section id="hero">
-        <h1>Tafajjal Islam</h1>
-        <p>Researcher | Psychologist | Educator</p>
-        <p>Department of Psychology, University of Rajshahi, Rajshahi-6205</p>
-    </section>
-    
-    <section id="about" class="section">
-        <h2>About</h2>
-        <p> I am a dedicated researcher in the field of psychology, with a strong focus on health-related behaviors and psychological disorders. My work aims to understand the causes, effects, and treatments of various mental health conditions, contributing to the development of effective strategies for improving well-being.  
 
-With a Master’s and Bachelor’s degree in Psychology from the University of Rajshahi, I have actively engaged in research across multiple institutions. I have over three years of experience as a Research Assistant, participating in projects that involve systematic reviews, meta-analyses, and data-driven studies on topics such as adolescent obesity, mental health, and behavioral psychology.  
+    <!-- Hero Section -->
+    <section id="about">
+        <div class="hero">
+            <div class="profile-img">
+                <img src="profile.jpg" alt="Tafajjal Islam">
+            </div>
+            <div class="profile-content">
+                <h1>Tafajjal Islam, MSc</h1>
+                <h2>Research Assistant | Psychologist</h2>
+                <p>Passionate about psychological research, data analysis, and clinical studies. Eager to collaborate on multi-disciplinary projects.</p>
+                <a href="#contact" class="btn">Get in Touch</a>
+            </div>
+        </div>
+    </section>
 
-Beyond research, I have nearly two years of teaching experience as the Head of Biology at Focus University Admission Coaching. Additionally, I have published multiple research articles and actively contribute to academic discussions through conferences and seminars. My technical proficiency in research software (SPSS, NVivo, Mendeley) and strong analytical skills further enhance my contributions to the field.  
+    <!-- Education & Research -->
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="edu-grid">
+                <div class="edu-item">
+                    <h3>MSc in Psychology</h3>
+                    <p>University of Rajshahi</p>
+                </div>
+                <div class="edu-item">
+                    <h3>BSc in Psychology</h3>
+                    <p>University of Rajshahi</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-I am passionate about advancing psychological research through collaboration and innovative methodologies. My goal is to continue exploring critical mental health issues and contribute to evidence-based solutions that positively impact society.  
+    <section id="research">
+        <div class="container">
+            <h2>Research Experience</h2>
+            <p>Currently working as a Research Assistant at the Health Research Group, focusing on substance use patterns among psychotic inpatients.</p>
+        </div>
+    </section>
 
-</p>
+    <!-- Publications -->
+    <section id="publications">
+        <div class="container">
+            <h2>Publications</h2>
+            <p>Published and accepted articles in various psychological research journals.</p>
+            <a href="your-publications-link" class="btn">View Publications</a>
+        </div>
     </section>
-     <section id="education" class="section">
-        <h2>Educations</h2>
-        <h3>Master of Science in Psychology</h3>
-        <p><strong>University of Rajshahi</strong></p>
-        <p>Thesis: The Mediating Effect of Mental Well-being on the Association Between Drug Use and Suicidal Thoughts</p>
-        <p>CGPA: 3.43 | Passing Year: 2025</p>
-           <h3>Bachelor of Science in Psychology</h3>
-        <p><strong>University of Rajshahi</strong></p>
-        <p>Thesis: The  Effect of Emotional Intelligence on academic performance among university students</p>
-        <p>CGPA: 3.36 | Passing Year: 2023</p>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:tafajjal.edu@gmail.com">tafajjal.edu@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/tafajjal-islam-560665348" target="_blank">View Profile</a></p>
+        </div>
     </section>
-    <section id="skills" class="section">
-        <h2>Skills & Expertise</h2>
-        <p><strong>Research Tools:</strong> Zotero, Mendeley, SPSS, NVivo, Kobo Toolbox.</p>
-        <p><strong>Software Proficiency:</strong> MS Office, Photoshop, Illustrator, Premiere Pro.</p>
-    </section>
-    
-    <section id="research" class="section">
-         <section id="research-interests" class="section">
-        <h2>Research Interests</h2>
-        <p><strong>Mental Health, Public Health, Epidiemology, Psychological Disorders</strong> (Jan 2022 – Dec 2023)</p>
-       
-    </section>
-       <section id="research-experience" class="section"> 
-        <h2>Research Experience</h2>
-        <h3>Research Assistant</h3>
-        <p><strong>Health Research Group, University of Rajshahi</strong> (Jan 2024 – Present)</p>
-        <p>Ongoing Project: Patterns of Substance Use Among Psychotic Inpatients: A Cross-Sectional Study</p>
-        <ul>
-            <li>Survey data collection and analysis</li>
-            <li>Writing manuscripts as a first author</li>
-            <li>Review, edit, and ensure data accuracy</li>
-        </ul>
-         <h3>Research Assistant</h3>
-        <p><strong>Institute of Natural Resources Research and Development, Rajshahi</strong> (Jan 2022 – Dec 2023)</p>
-        <ul>
-            <li>Survey data collection and analysis</li>
-            <li>Writing manuscripts as a first author</li>
-            <li>Review, edit, and ensure data accuracy</li>
-        </ul>
-    </section>
- <section id="publications" class="section">
-        <h2>Publications & Conference Papers</h2>
-        <h3>Publications</h3>
-        <ul>
-            <li>Islam, T. & Mia, M. (2024). Relationship of Emotional Intelligence with Mental Health. <em>International Journal of Indian Psychology</em>.</li>
-            <li>Mia, M. et al. (2025). Adaptation and validation of the PHQ-9 scale in Bangla. <em>Frontiers in Psychology</em>.</li>
-        </ul>
-        <h3>Conference Papers</h3>
-        <ul>
-            <li>Islam, T. & Mia, M. (2024). Relationship of Emotional Intelligence with Mental Health and Differences based on Gender. 23 International Mathematic Conference, Organized by the Department of Mathematics, University of Rajshahi from 16-17 May 2024. </li>
-            <li>Islam, T. & Mia, M. (2024). Prevalence of Anxiety, Depression, Stress and Suicide in Bangladesh: A Systematic Review. 23 International Mathematic Conference, Organized by the Department of Mathematics, University of Rajshahi from 16-17 May 2024.</li>
-        </ul>
-    </section>
-    </section>
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-         <p><i class="fa fa-home fa-fw"></i> Dhaka, Bangladesh</p>
-                        <p><i class="fa fa-envelope fa-fw"></i> tafazzal.edu@mail.com</p>
-                        <p><i class="fa fa-phone fa-fw"></i> +8801648-520548</p>
-        <p>
-        <a href="https://github.com/tafajjal-edu/tafajjal/releases/download/pdf/CV.of.Tafajjal.Normal.pdf" class="w3-button w3-teal w3-round"><i class="fa fa-download"></i> Download CV</a>
-                        </p>
-                        <p>
-                            <a href="https://scholar.google.com/citations?user=a1JpBxUAAAAJ&hl=en" target="_blank" class="w3-button w3-teal w3-round tag">Google Scholar</a>
-                            <a href="https://www.researchgate.net/profile/Tafajjal-Islam" target="_blank" class="w3-button w3-teal w3-round tag">ResearchGate</a>
-                            <a href="https://orcid.org/0009-0000-5671-4457" target="_blank" class="w3-button w3-teal w3-round tag">ORCID</a>
-                        </p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Tafajjal Islam. All Rights Reserved.</p>
-    </footer>
+
 </body>
 </html>
