@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tafajjal Islam - Research Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigation */
+        header {
+            background: #001f3f;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: yellow;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 50px 20px;
+            background: #001f3f;
+            color: white;
+        }
+        .profile-img img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid yellow;
+            margin-bottom: 20px;
+        }
+        .profile-content h1 {
+            font-size: 32px;
+        }
+        .profile-content h2 {
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .profile-content p {
+            font-size: 16px;
+            max-width: 600px;
+        }
+        .btn {
+            background: yellow;
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: orange;
+        }
+
+        /* Sections */
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: auto;
+            padding: 40px 0;
+            text-align: center;
+            background: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Education Grid */
+        .edu-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .edu-item {
+            background: #001f3f;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            width: 40%;
+            min-width: 250px;
+        }
+
+        /* Contact */
+        #contact {
+            background: black;
+            padding: 40px;
+        }
+        #contact h2, #contact p {
+            color: white;
+        }
+        #contact a {
+            color: yellow;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #contact a:hover {
+            color: orange;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            .edu-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            .edu-item {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about">
+        <div class="hero">
+            <div class="profile-img">
+                <img src="https://github.com/tafajjal-edu/tafajjal/blob/main/300.300.jpg" alt="Tafajjal Islam">
+            </div>
+            <div class="profile-content">
+                <h1>Tafajjal Islam</h1>
+                <h2>Research Assistant | Psychologist</h2>
+                <p>Passionate about psychological research, data analysis, and clinical studies. Eager to collaborate on multi-disciplinary projects.</p>
+                <a href="#contact" class="btn">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Research -->
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="edu-grid">
+                <div class="edu-item">
+                    <h3>MSc in Psychology</h3>
+                    <p>University of Rajshahi</p>
+                </div>
+                <div class="edu-item">
+                    <h3>BSc in Psychology</h3>
+                    <p>University of Rajshahi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research">
+        <div class="container">
+            <h2>Research Experience</h2>
+            <p>Currently working as a Research Assistant at the Health Research Group, focusing on substance use patterns among psychotic inpatients.</p>
+        </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications">
+        <div class="container">
+            <h2>Publications</h2>
+            <p>Published and accepted articles in various psychological research journals.</p>
+            <a href="your-publications-link" class="btn">View Publications</a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:tafajjal.edu@gmail.com">tafajjal.edu@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/tafajjal-islam-560665348" target="_blank">View Profile</a></p>
+        </div>
+    </section>
+
+</body>
+</html>
