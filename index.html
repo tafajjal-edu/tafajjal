@@ -3,89 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Profile - Tafajjal Islam</title>
+    <title>Tafajjal Islam - Research Profile</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigation */
+        header {
+            background: #001f3f;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: yellow;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 50px 20px;
+            background: #001f3f;
+            color: white;
+        }
+        .profile-img img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid yellow;
+            margin-bottom: 20px;
+        }
+        .profile-content h1 {
+            font-size: 32px;
+        }
+        .profile-content h2 {
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .profile-content p {
+            font-size: 16px;
+            max-width: 600px;
+        }
+        .btn {
+            background: yellow;
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: orange;
+        }
+
+        /* Sections */
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: auto;
+            padding: 40px 0;
+            text-align: center;
+            background: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Education Grid */
+        .edu-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .edu-item {
+            background: #001f3f;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            width: 40%;
+            min-width: 250px;
+        }
+
+        /* Contact */
+        #contact {
+            background: black;
+            padding: 40px;
+        }
+        #contact h2, #contact p {
+            color: white;
+        }
+        #contact a {
+            color: yellow;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #contact a:hover {
+            color: orange;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            .edu-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            .edu-item {
+                width: 80%;
+            }
+        }
+    </style>
 </head>
 <body>
 
     <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="home">
-        <div class="hero">
-            <h1>Welcome to My Research Profile</h1>
-            <p>Exploring mental health, gender psychology, and emotional intelligence.</p>
-        </div>
-    </section>
-
-    <!-- About Section -->
     <section id="about">
-        <h2>About Me</h2>
-        <p>I am a researcher focused on psychology and behavioral sciences, specializing in emotional intelligence and mental health.</p>
+        <div class="hero">
+            <div class="profile-img">
+                <img src="profile.jpg" alt="Tafajjal Islam">
+            </div>
+            <div class="profile-content">
+                <h1>Tafajjal Islam, MSc</h1>
+                <h2>Research Assistant | Psychologist</h2>
+                <p>Passionate about psychological research, data analysis, and clinical studies. Eager to collaborate on multi-disciplinary projects.</p>
+                <a href="#contact" class="btn">Get in Touch</a>
+            </div>
+        </div>
     </section>
 
-    <!-- Research Section -->
+    <!-- Education & Research -->
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="edu-grid">
+                <div class="edu-item">
+                    <h3>MSc in Psychology</h3>
+                    <p>University of Rajshahi</p>
+                </div>
+                <div class="edu-item">
+                    <h3>BSc in Psychology</h3>
+                    <p>University of Rajshahi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="research">
-        <h2>Research Focus</h2>
-        <p>My research covers mental health, gender differences, and psychological factors influencing behavior.</p>
+        <div class="container">
+            <h2>Research Experience</h2>
+            <p>Currently working as a Research Assistant at the Health Research Group, focusing on substance use patterns among psychotic inpatients.</p>
+        </div>
     </section>
 
-    <!-- Publications Section -->
+    <!-- Publications -->
     <section id="publications">
-        <h2>Publications</h2>
-
-        <!-- Image Display -->
-        <div class="pub-image">
-            <img src="assets/images/image.png" alt="Publications List">
-        </div>
-
-        <div class="publication-list">
-            <h3>Published Journal Articles</h3>
-            <ul>
-                <li>📄 Islam, M. M., Mimi, A., Khatun, M., Sarker, P. C., <b>Islam, T.</b>, & Based, M. A. A (2025). <a href="#">DOI:10.53344/pnj.7.1.56578</a></li>
-                <li>📄 <b>Islam, T.</b> & Mia, M. (2024). Relationship of Emotional Intelligence with Mental Health. <a href="#">DOI:10.25215/1201.008</a></li>
-                <li>📄 <b>Islam, T.</b> (2024). Gender Differences in Economic Values. <a href="#">DOI:10.25215/1201.004</a></li>
-            </ul>
-        </div>
-
-        <div class="publication-list">
-            <h3>Conference Papers</h3>
-            <ul>
-                <li>📄 <b>Islam, T.</b> & Mia, M. (2024). Emotional Intelligence and Mental Health Differences.</li>
-                <li>📄 <b>Islam, T.</b> & Mia, M. (2024). Prevalence of Anxiety, Depression, and Suicide in Bangladesh.</li>
-            </ul>
-        </div>
-
-        <div class="publication-list">
-            <h3>Accepted Journal Articles</h3>
-            <ul>
-                <li>📄 <b>Islam, T.</b>, Mondol, M. H., & Hossain, G. (2024). Asthma and its association with depressive symptoms. <i>PLOS ONE</i></li>
-                <li>📄 Mondol, M. H., <b>Islam, T.</b>, Mondol, H., Mia, M. (2024). Internet Addiction and Mental Health. <i>BMC Psych</i></li>
-                <li>📄 Mia, M., <b>Islam, T.</b>, Mondol, M. H., Hossain, G. (2024). Factors influencing panic disorder.</li>
-            </ul>
+        <div class="container">
+            <h2>Publications</h2>
+            <p>Published and accepted articles in various psychological research journals.</p>
+            <a href="your-publications-link" class="btn">View Publications</a>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: tafajjal.islam@example.com</p>
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:tafajjal.edu@gmail.com">tafajjal.edu@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/tafajjal-islam-560665348" target="_blank">View Profile</a></p>
+        </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Tafajjal Islam - Research Profile</p>
-    </footer>
 
 </body>
 </html>
